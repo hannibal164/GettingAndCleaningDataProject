@@ -66,4 +66,4 @@ tidy<- X%>%
 		summarise_each(funs(mean))
 
 #Write the new tiday dataset to local drive.
-write.csv(tidy,"tidy_dataset.txt",row.names = FALSE)
+write.table(tidy,"tidy_dataset.txt",row.names = FALSE)
